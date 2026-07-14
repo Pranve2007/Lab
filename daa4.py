@@ -1,11 +1,6 @@
 import heapq
  
 def dijkstra(graph, source):
-    """
-    Dijkstra's Algorithm using Min-Heap
-    Time: O((V + E) log V), Space: O(V)
-    graph: dict {u: [(v, weight), ...]}, 0-indexed
-    """
     n = len(graph)
     dist = [float('inf')] * n
     prev = [None] * n
